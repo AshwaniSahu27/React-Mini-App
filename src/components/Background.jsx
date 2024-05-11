@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { themeContext } from "../context/themeContext";
 
 function Background() {
+  const {isDark} = useContext(themeContext);
+
+
   return (
     <>
-      <div className=" fixed z-[1] w-full h-screen">
+      <div className={` fixed z-[1] w-full h-screen ${isDark?"":"light"}`}>
         <div className=" w-full py-5 flex justify-center font-semibold text-xl text-zinc-500 absolute top-5">
           Documents
         </div>

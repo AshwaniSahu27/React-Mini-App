@@ -2,10 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family:Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-::selection{
-    color: rgb(193, 118, 52);
+::selection {
+  color: rgb(193, 118, 52);
+}
+
+.light {
+  background-color: white !important;
+  color: black !important;
+}
+.lighter {
+  background-color: rgb(225, 232, 232) !important;
+  color: black !important;
+
+  color:royalblue;
+}
+
+.setting {
+   animation:example 1.8s infinite alternate-reverse;
+}
+
+
+.animate{
+  transform: translateX(120px);
+  transition: all 0.6s;
+}
+.anim{
+  transition: all 0.6s;
+}
+@keyframes example {
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
