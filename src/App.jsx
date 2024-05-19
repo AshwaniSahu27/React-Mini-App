@@ -11,10 +11,7 @@ function App() {
     color1:"yellowgreen",
     color2:"cadetblue"
   })
-
-
-
-
+  
   return (
     <>
       <themeContext.Provider value={{isDark, setIsDark,changeColor,setChangeColor}}>
